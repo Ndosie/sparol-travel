@@ -108,9 +108,6 @@ a {
   background-image: url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2200&q=85");
 }
 
-.contact .panel-shade {
-  background: #1d160ac7;
-}
 .panel-content {
   max-width: 720px;
   position: relative;
@@ -147,37 +144,7 @@ h2 span {
   flex-wrap: wrap;
   gap: 14px;
 }
-.button {
-  border: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 48px;
-  padding: 14px 22px;
-  font: inherit;
-  font-size: 0.82rem;
-  font-weight: 800;
-  cursor: pointer;
-  border-radius: 3px;
-  transition:
-    transform 0.2s,
-    background 0.2s;
-}
-.button:hover {
-  transform: translateY(-2px);
-}
-.button-primary {
-  background: var(--orange);
-  color: #fff;
-}
-.button-primary:hover {
-  background: #99551f;
-}
-.button-outline {
-  border: 1px solid #ffffffcc;
-  color: #fff;
-  background: #ffffff0f;
-}
+
 .scroll-cue {
   margin-top: 68px;
   font-size: 0.65rem;
@@ -194,69 +161,7 @@ h2 span {
   height: 1px;
   background: #e9a45c;
 }
-.highlights {
-  padding: 0;
-  margin: 0 0 30px;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.highlights li {
-  border: 1px solid #ffffff66;
-  padding: 9px 12px;
-  font-size: 0.75rem;
-  background: #ffffff14;
-}
-.destination-label {
-  position: absolute;
-  right: clamp(24px, 5vw, 70px);
-  bottom: 30px;
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  font-weight: 700;
-  color: #ffffffbf;
-}
-.contact-content {
-  max-width: 680px;
-}
-.trip-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  max-width: 650px;
-}
-.trip-form label {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 0.78rem;
-  font-weight: 700;
-}
-.trip-form label:nth-child(3),
-.trip-form button {
-  grid-column: 1/-1;
-}
-.trip-form input,
-.trip-form select,
-.trip-form textarea {
-  width: 100%;
-  border: 1px solid #ffffff59;
-  border-radius: 3px;
-  padding: 13px;
-  color: #2c2416;
-  background: var(--cream);
-  font: inherit;
-  font-size: 0.9rem;
-}
-.trip-form textarea {
-  resize: vertical;
-}
-.small-note {
-  font-size: 0.72rem;
-  color: #ffffffb8;
-  margin-top: 16px;
-}
+
 .footer {
   background: #211909;
   color: #eee3d1;
@@ -328,19 +233,6 @@ code {
   }
   .scroll-cue {
     margin-top: 42px;
-  }
-  .destination-label {
-    left: 25px;
-    right: auto;
-    font-size: 0.58rem;
-  }
-  .trip-form {
-    grid-template-columns: 1fr;
-  }
-  .trip-form label,
-  .trip-form label:nth-child(3),
-  .trip-form button {
-    grid-column: auto;
   }
   .footer {
     flex-direction: column;
@@ -520,45 +412,7 @@ code {
 .place-link:hover {
   color: #382a0b;
 }
-.destination {
-  background-image: none !important;
-  background-color: #f4ecdf;
-  color: #382a0b;
-  min-height: auto;
-  padding-top: 86px;
-  padding-bottom: 86px;
-}
-.destination .panel-shade {
-  display: none;
-}
-.destination .panel-content {
-  max-width: 900px;
-}
-.destination .eyebrow {
-  color: #a85f23;
-}
-.destination h2,
-.destination h2 span {
-  color: #382a0b;
-}
-.destination h2 span {
-  color: #b66a28;
-}
-.destination .lead {
-  color: #665943;
-}
-.destination .highlights li {
-  color: #382a0b;
-  border-color: #d9cbb5;
-  background: #fffaf1;
-}
-.destination .destination-label {
-  color: #8a7658;
-}
-.destination.heritage,
-.destination.marangu {
-  background-color: #fffaf1;
-}
+
 @media (max-width: 1000px) {
   .places-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -586,16 +440,8 @@ code {
   .about-highlight {
     padding: 28px;
   }
-  .destination {
-    padding: 70px 22px;
-  }
-  .destination-label {
-    position: static;
-    margin-top: 30px;
-  }
 }
 
-/* CONTACT SECTION */
 .contact-section {
   padding: 90px 6%;
   background: #fffaf1;
@@ -733,7 +579,6 @@ code {
   transform: translateY(-3px);
 }
 
-/* CONTACT FORM */
 .contact-form-card {
   background: #ffffff;
   padding: 35px;
@@ -798,7 +643,6 @@ code {
   background: #92501d;
 }
 
-/* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
   .contact-section {
     padding: 65px 22px;
