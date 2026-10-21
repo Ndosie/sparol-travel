@@ -567,9 +567,13 @@ code {
   border-radius: 50%;
   color: #382a0b;
   font-weight: 800;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   text-decoration: none;
   transition: 0.25s ease;
+}
+
+.tiktok {
+  font-size: 2rem;
 }
 
 .social-links a:hover {
